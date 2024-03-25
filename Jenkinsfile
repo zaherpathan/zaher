@@ -8,6 +8,12 @@ pipeline {
       }
     }
 
+    stage('download') {
+      steps {
+        sh 'echo "hello download"'
+      }
+    }
+
   }
   environment {
     Build = ''
